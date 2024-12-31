@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul>li>a:hover {
+    color: rgb(192, 189, 205);
+}
+
+main {
+    min-height: 100vh;
+}
+
+.logo img {
+    width: 15px;
+    filter: invert(1);
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+.container h1 {
+    padding: 12px 0;
+}
+
+input[type='text'] {
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #0e0e1a;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        font-size: 12px;
+    }
+
+    input[type='text'] {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 15px;
+        filter: invert(1);
+    }
+}
